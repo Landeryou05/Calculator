@@ -50,7 +50,7 @@ public class Main {
                             number2 = 0;
                             operator = null;
                             displayedText = "";
-                            entryText.setText("0");
+                            entryText.setText(displayedText);
                             break;
 
                         case "=":
@@ -119,13 +119,8 @@ public class Main {
             numbers.add(numberButton);
         }
 
-        if(entryText.getText() != ""){
-            entryText.setText(displayedText);
-        }else{
-            entryText.setText("0");
-        }
-
         entryText.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 35));
+        entryText.setPreferredSize(new Dimension(200, 50));
 
         entry.setBorder(new LineBorder(Color.black, 3, true));
         entry.setBorder(new EmptyBorder(25, 5, 25, 25));
