@@ -8,6 +8,6 @@ public class Frame extends JFrame{
         this.setVisible(true);
         this.setSize(300,500);
         this.setResizable(false);
-        this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

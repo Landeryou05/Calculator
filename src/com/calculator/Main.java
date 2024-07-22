@@ -1,33 +1,24 @@
 package com.calculator;
 
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
-import javax.swing.border.CompoundBorder;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Color;
-import java.awt.ComponentOrientation;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class Main {
     public static String displayedText = "";
     public static Integer number1;
     public static Integer number2;
-    public static Integer counter;
     public static Character operator;
     
 
@@ -124,7 +115,6 @@ public class Main {
 
         entry.setBorder(new LineBorder(Color.black, 3, true));
         entry.setBorder(new EmptyBorder(25, 5, 25, 25));
-
         entry.add(entryText);
 
         mainFrame.getContentPane().add(entry, BorderLayout.NORTH);
